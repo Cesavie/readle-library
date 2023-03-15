@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/13d302febe.js" crossorigin="anonymous"></script>
+    <title>Checkout</title>
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="nav-checkout">
+        <h1>
+            <a href="index.html">
+                READLE
+            </a>
+        </h1>
+        <a href="#">
+            <span>
+                <i class="fa-solid fa-user"></i>
+            Login/Register
+            </span>
+        </a>
+    </nav>
+
+    <div class="body-checkout">
+        <!-- shipping Details -->
+        <div class="shipping-box">
+            <form action="#" method="#">
+                <div class="shipping-title">
+                    Shipping Details
+                </div>
+                <div class="personal-info">
+                    <h3>
+                        Personal Information
+                    </h3>
+                    <span>
+                        <label for="emailAdd">Email: </label>
+                        <input type="text" id="emailAdd" name="emailAdd" placeholder="ex. example@gmail.com">
+                    </span>
+                    <p>
+                        You have the option to create an account with this email after checkout.
+                    </p>
+                </div>
+                <div class="shipping-add">
+                    <h3>
+                        Shipping Address
+                    </h3>
+                    <span>
+                        <label for="fullName">Name: </label>
+                        <input type="text" id="fullName" name="fullName" placeholder="ex. Jasmine Palcon">
+                    </span>
+                    <span>
+                        <label for="fullAdress">Address: </label>
+                        <input type="text" id="fullAddress" name="fullAddress" placeholder="Street name, Brgy., City/Municipality, Province">
+                    </span>
+                    <span>
+                        <label for="region">Region: </label>
+                        <select id="region" name="region">
+                        <option>NCR</option>
+                        <option>Ilocos Region</option>
+                        <option>Cagayan Valley</option>
+                        <option>Central Luzon</option>
+                        <option>CALABARZON</option>
+                        <option>MIMAROPA Region</option>
+                        <option>Bicol Region</option>
+                        <option>Western Visayas</option>
+                        <option>Central Visayas</option>
+                        <option>Eastern Visayas</option>
+                        <option>Zamboanga Peninsula</option>
+                        <option>Northern Mindanao</option>
+                        <option>Davao Region</option>
+                        <option>SOCCSKSARGEN</option>
+                        <option>Caraga</option>
+                        <option>CAR</option>
+                        <option>BARMM</option>
+                        </select>
+                    </span>
+                    <span>
+                        <label for="userMobile">Phone Number: </label>
+                        <input type="tel" id="userMobile" name="userMobile" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="ex. 09100100100">
+                    </span>
+                </div>
+                <div class="comment-box">
+                    <h3>
+                        Additional Instructions
+                    </h3>
+                    <span>
+                        <label for="userNotes">Notes: </label>
+                        <textarea id="userNotes" name="userNotes" rows="5" cols="50" maxlength="50"></textarea>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <!-- order summary -->
+        <div class="order-box">
+            <form>
+                <div class="order-summary">
+                    <div class="order-title">
+                        ORDER SUMMARY
+                    </div> 
+                    <div class="order-container">
+                        <div class="order-image">
+                            <img src="assets/images/image4.jpg">
+                        </div>
+                        <div class="order-content">
+                            <div class="order-title">
+                                Adventures of Huckleberry Finn
+                            </div>
+                            <div class="order-number">
+                                <span>
+                                    Quantity: 1
+                                </span>
+                                <span>
+                                    Php 525.00
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <span class="subtotal">
+                        Subtotal
+                    </span>
+                    <span class="order-total">
+                        Order Total
+                    </span>
+                </div>
+
+                <div class="discount-box">
+                    <span>
+                        Have a discount code?
+                    </span>
+                    <div>
+                        <input type="promoCode" id="promoCode" name="promoCode" placeholder="Your discount code">
+                        <input type="submit" value="APPLY">
+                    </div>
+                </div>
+
+                <div class="payment-method">
+                    <span>
+                        Payment Method
+                    </span>
+                    <div class="payment-option">
+                        <span>
+                            <input type="radio" id="cod" name="paymentMethod" value="cod">
+                            <label for="cod">Cash on Delivery </label>
+                        </span>
+                        <span>
+                            <input type="radio" id="masterCard" name="paymentMethod" value="Master Card">
+                            <label for="masterCard">Master Card </label>
+                        </span>
+                        <span>
+                            <input type="radio" id="visa" name="paymentMethod" value="visa">
+                            <label for="visa">Visa </label>
+                        </span>
+                        <span>
+                            <input type="radio" id="americanExpress" name="paymentMethod" value="visa">
+                            <label for="americanExpress">American Express </label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="order-button">
+                    <input type="submit" id="placeOrder" value="Place Order">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<footer>
+    <div class="copyright">
+        <span>
+            Copyright
+            <i class="fa-regular fa-copyright"></i>
+            2023 Cesavie
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>

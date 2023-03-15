@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;   
+}
+
+body {
+    margin: 0;
+}
+
+/* navigation */
+nav {
+    background-color: rgb(160, 37, 37);
+    color: rgb(241, 233, 184);
+    display: flex;
+    width: auto;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.nav-bar span {
+    margin: 0 20px;
+}
+
+#searchBar {
+    width: 300px;
+    height: 25px;  
+}
+
+.nav-bar span button {
+    height: 31px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(241, 233, 184);
+}
+
+.nav-list a:hover {
+    position: relative;
+    top: 1.5px;
+    color: rgb(228, 214, 19);
+}
+
+.nav-list span {
+    margin: 0 20px;
+}
+
+.nav-list span i {
+    font-size: 20px;
+}
+
+/* header */
+header {
+    background-image: url(images/header1.jpg);
+    background-color: rgb(241, 233, 184);
+    margin: 0;
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+
+/* section */
+section {
+    background-color: rgb(241, 233, 184);
+    width: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(160, 37, 37);
+}
+
+.title span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.row-cards {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 1px solid rgb(241, 233, 184);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 0;
+    width: 200px;
+    height: auto;
+}
+
+.card:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: 2px 3px 3px 2px rgb(168, 146, 0);
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+
+.card-image i {
+    position: relative;
+    top: 10px;
+    right: 13px;
+    font-size: 25px;
+    color: rgb(170, 84, 84);
+}
+
+.card-image i:hover{
+    color: rgb(160, 37, 37);
+}
+
+.card-image img {
+    border-radius: 0 10px 10px 0;
+    width: 120px;
+    height: 180px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text h4 {
+    width: 100%;
+    height: 50px;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text span {
+    margin: 10px;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+}
+
+.card button {
+    background-color: rgb(84, 133, 84);
+    color: rgb(241, 233, 184);
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+}
+
+/* footer */
+footer {
+    width: auto;
+    height: auto;
+    background-color: rgb(160, 37, 37);
+    color: rgb(241, 233, 184);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.footer-title{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: rgb(241, 233, 184);
+}
+
+.payment-title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.comment-box, .payment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.comment-box span, .payment-box span {
+    padding: 5px 0;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+/* CHECKOUT FORM */
+
+/* navigation */
+.nav-checkout {
+    background-color: rgb(160, 37, 37);
+    color: rgb(241, 233, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-checkout h1 a, .nav-checkout a {
+    text-decoration: none;
+    color: rgb(241, 233, 184);
+}
+
+
+
+/* shipping details */
+.body-checkout {
+    background-color: rgb(241, 233, 184);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shipping-title {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10px 0 0;
+}
+
+.order-title {
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.shipping-box {
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 2px rgb(168, 146, 0);
+    padding: 0 20px 20px;
+    width: 50%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.shipping-add {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info input, .comment-box textarea, .shipping-add input, select {
+    display: block;
+    width: 80%;
+    height: 30px
+}
+
+.order-box {
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 2px rgb(168, 146, 0);
+    padding: 0 20px 20px;
+    width: 30%;
+    height: 90vh;
+    margin: 30px 0;
+}
+
+.order-summary {
+    border-bottom: 1px solid rgb(87, 76, 5);
+}
+
+.order-summary h3 {
+    background-color: rgb(160, 37, 37);
+}
+
+.order-image img {
+    width: 60px;
+    height: 85px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+
+.order-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total span {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(150, 136, 44);
+}
+
+.subtotal {
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.order-total {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.discount-box {
+    padding: 10px 0;
+}
+
+#promoCode {
+    width: 75%;
+    height: 30px;
+}
+
+.payment-option {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+#placeOrder {
+    width: 70%; 
+    height: 40px; 
+    border: 1px;
+    font-size: 18px;
+    background-color: rgb(160, 37, 37); 
+    color: aliceblue; 
+}
+
+
+
+@media (max-width:600px) {
+    nav {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    header {
+        background-size: cover;
+    }
+    .row-cards {
+        flex-direction: column;
+    }
+    .card {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    /* checkout form */
+    .nav-checkout {
+        flex-direction: row;  
+    }
+
+    .body-checkout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shipping-box, .order-box {
+        width: 80%;
+        height: auto;
+    }
+}
